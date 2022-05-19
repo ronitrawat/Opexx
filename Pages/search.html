@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qpexx</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- Font-Awesome Link -->
+    <link
+      rel="stylesheet"
+      href="../css/fontawesome-free-5.15.1-web/css/all.css"
+    />
+  </head>
+  <body>
+    <!-- ******************** Navbar Start ******************** -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="../index.html"
+              >OPEXX <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./search.html">SEARCH</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pricing.html">PRICING</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- ******************** Navbar End ******************** -->
+
+    <!-- ******************** Search Page Start ******************** -->
+
+    <div class="SearchPage__link container-fluid text-center">
+      <ul
+        class="nav nav-pills mb-3 container justify-content-center"
+        id="pills-tab"
+        role="tablist"
+      >
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link active bg-transparent"
+            id="pills-home-tab"
+            data-toggle="pill"
+            href="#pills-home"
+            role="tab"
+            aria-controls="pills-home"
+            aria-selected="true"
+            >Live Tenders</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link bg-transparent"
+            id="pills-profile-tab"
+            data-toggle="pill"
+            href="#pills-profile"
+            role="tab"
+            aria-controls="pills-profile"
+            aria-selected="false"
+            >Winners</a
+          >
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="pills-home"
+          role="tabpanel"
+          aria-labelledby="pills-home-tab"
+        >
+          <form class="container pb-3">
+            <div class="form-row justify-content-between">
+              <div class="form-group col-md-8">
+                <input type="text" class="form-control" placeholder="Keyword" />
+              </div>
+              <div class="form-group col-md-4">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Location"
+                />
+              </div>
+            </div>
+            <div class="collapse show_hide_content" id="showHideContent">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Min Value"
+                  />
+                </div>
+                <div class="form-group col-md-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Max Value"
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Buyer Name"
+                  />
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="text" class="form-control" placeholder="CPV" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <select class="form-control">
+                    <option selected>Published</option>
+                    <option selected>Deadline</option>
+                    <option>Any Time</option>
+                    <option>Today</option>
+                    <option>Within Last 7 Days</option>
+                    <option>Within Last 30 Days</option>
+                    <option>Custom Range</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-6">
+                  <select class="form-control">
+                    <option selected>Deadline</option>
+                    <option>Any Time</option>
+                    <option>In The Future</option>
+                    <option>Within 7 Days</option>
+                    <option>Within 30 Days</option>
+                    <option>Within a Days</option>
+                    <option>Custom Range</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <a
+              class="text-white"
+              data-toggle="collapse"
+              href="#showHideContent"
+              role="button"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+            >
+              Show More/Less
+            </a>
+          </form>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="pills-profile"
+          role="tabpanel"
+          aria-labelledby="pills-profile-tab"
+        >
+          <div class="text-center container">
+            <p class="text-white mx-auto mb-4" style="width: 60%">
+              Winner and award information allow you to analyze previously
+              awarded contracts. Start your free 14-day trial now to see which
+              companies have won tenders and which organizations have issued
+              tenders before.
+            </p>
+            <button
+              type="button"
+              class="btn btn-success text-uppercase mr-4 mb-3"
+              style="padding: 5px 160px"
+            >
+              Start Free Trail
+            </button>
+            <button
+              type="button"
+              class="btn btn-link btn-light text-decoration-none mb-3"
+              style="padding: 5px 180px"
+            >
+              Login
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ******************** Search Page Start ******************** -->
+
+    <!-- ******************** Details Page Start ******************** -->
+    <div class="details container my-5">
+      <div class="text-center">
+        <h1 class="mb-4 font-weight-lighter">
+          9,000,000 tenders at your fingertips.
+        </h1>
+        <p class="text-primary">
+          Start free trial for 14 days. No credit card needed.
+        </p>
+        <button type="button" class="btn btn-success text-uppercase mt-3">
+          Start free trial
+        </button>
+      </div>
+    </div>
+    <!-- ******************** Details Page Start ******************** -->
+
+    <!-- Bootstrap JavaScript & jQuery -->
+    <script src="../js/jquery-3.5.1.slim.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>
